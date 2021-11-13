@@ -6,7 +6,7 @@ import {
   View,
   SafeAreaView,
   Image,
-  TouchableOpacity,
+  TouchableHighlight,
 } from "react-native";
 
 export default function App() {
@@ -17,16 +17,15 @@ export default function App() {
       <Image source={require("./assets/favicon.png")} />
       {/* online image */}
 
-      <TouchableOpacity onPress={() => console.log("qwerty")}>
+      <TouchableHighlight onPress={() => console.log("qwerty")}>
         <Image
-          blurRadius={2}
           source={{
             width: 200,
             height: 300,
             uri: "https://picsum.photos/200/300",
           }}
         />
-      </TouchableOpacity>
+      </TouchableHighlight>
 
       <StatusBar style="auto" />
     </SafeAreaView>
