@@ -7,6 +7,7 @@ import {
   SafeAreaView,
   Image,
   TouchableHighlight,
+  TouchableNativeFeedback,
 } from "react-native";
 
 export default function App() {
@@ -26,6 +27,17 @@ export default function App() {
           }}
         />
       </TouchableHighlight>
+
+      <TouchableNativeFeedback>
+        <View
+          style={{
+            width: 100,
+            height: 50,
+            backgroundColor: "green",
+            padding: 10,
+          }}
+        ></View>
+      </TouchableNativeFeedback>
 
       <StatusBar style="auto" />
     </SafeAreaView>
