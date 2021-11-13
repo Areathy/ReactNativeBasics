@@ -9,10 +9,7 @@ export default function App() {
         color="green"
         title="click me"
         onPress={() =>
-          Alert.alert("Title", "message", [
-            { text: "go", onPress: () => console.log("GO!!!") },
-            { text: "stop", onPress: () => console.log("STOP!!!") },
-          ])
+          Alert.prompt("Title", "message", (text) => console.log(text))
         }
       />
     </SafeAreaView>
