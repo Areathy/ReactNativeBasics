@@ -3,21 +3,21 @@ import React from "react";
 import {
   StyleSheet,
   SafeAreaView,
+  View,
   Button,
   Alert,
   Platform,
+  Dimensions,
 } from "react-native";
 
 export default function App() {
+  console.log(Dimensions.get("screen"));
+
   return (
     <SafeAreaView style={styles.container}>
-      <Button
-        color="black"
-        title="click me"
-        onPress={() =>
-          Alert.prompt("Title", "message", (text) => console.log(text))
-        }
-      />
+      <View
+        style={{ backgroundColor: "tomato", width: "50%", height: 70 }}
+      ></View>
     </SafeAreaView>
   );
 }
