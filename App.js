@@ -6,7 +6,7 @@ import {
   View,
   SafeAreaView,
   Image,
-  TouchableWithoutFeedback,
+  TouchableOpacity,
 } from "react-native";
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
       <Image source={require("./assets/favicon.png")} />
       {/* online image */}
 
-      <TouchableWithoutFeedback onPress={() => console.log("qwerty")}>
+      <TouchableOpacity onPress={() => console.log("qwerty")}>
         <Image
           blurRadius={2}
           source={{
@@ -26,7 +26,7 @@ export default function App() {
             uri: "https://picsum.photos/200/300",
           }}
         />
-      </TouchableWithoutFeedback>
+      </TouchableOpacity>
 
       <StatusBar style="auto" />
     </SafeAreaView>
