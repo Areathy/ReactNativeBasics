@@ -36,7 +36,10 @@ const styles = StyleSheet.create({
     // justifyContent: "around",
     justifyContent: "space-between",
     // alignItems: "stretch",
-    // alignItems: "center",
+    alignItems: "center",
+    // alignItems: "baseline",
+    // alignItems: "flex-end"
+    // alignItems: "flex-start"
 
   },
   mediumvioletred: {
@@ -46,12 +49,12 @@ const styles = StyleSheet.create({
   },
   darkturquoise: {
     width: 100,
-    height: 100,
+    height: 200,
     backgroundColor: "darkturquoise",
   },
   black: {
     width: 100,
-    height: 100,
+    height: 300,
     backgroundColor: "black",
   },
 });
