@@ -18,18 +18,40 @@ export default function App() {
   const { landscape } = useDeviceOrientation();
 
   return (
-    <View style={{ backgroundColor: "black", flex: 1 }}>
-      <View style={{ backgroundColor: "mediumvioletred", flex: 1 }} />
-      <View style={{ backgroundColor: "black", flex: 2 }} />
-      <View style={{ backgroundColor: "darkturquoise", flex: 1 }} />
+    <View style={styles.container}>
+      <View style={styles.mediumvioletred} />
+      <View style={styles.darkturquoise} />
+      <View style={styles.black} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "#fff",
     flex: 1,
-    backgroundColor: Platform.OS === "ios" ? "teal" : "violet",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+    flexDirection: "row-reverse",
+    // justifyContent: "center",
+    // justifyContent: "space-evenly",
+    // justifyContent: "around",
+    justifyContent: "space-between",
+    // alignItems: "stretch",
+    // alignItems: "center",
+
+  },
+  mediumvioletred: {
+    width: 100,
+    height: 100,
+    backgroundColor: "mediumvioletred",
+  },
+  darkturquoise: {
+    width: 100,
+    height: 100,
+    backgroundColor: "darkturquoise",
+  },
+  black: {
+    width: 100,
+    height: 100,
+    backgroundColor: "black",
   },
 });
