@@ -4,26 +4,13 @@ import {
 } from "@react-native-community/hooks";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import {
-  StyleSheet,
-  SafeAreaView,
-  View,
-  Button,
-  Alert,
-  Platform,
-  Dimensions,
-} from "react-native";
+import { StyleSheet } from "react-native";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 export default function App() {
   const { landscape } = useDeviceOrientation();
 
-  return (
-    <View style={styles.container}>
-      <View style={styles.mediumvioletred} />
-      <View style={styles.darkturquoise} />
-      <View style={styles.black} />
-    </View>
-  );
+  return <WelcomeScreen />;
 }
 
 const styles = StyleSheet.create({
