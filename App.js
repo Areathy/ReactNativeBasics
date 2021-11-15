@@ -35,11 +35,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   mediumvioletred: {
-    // width: 100,
-    flexBasis: 100, // width or height
+    width: 100,
     height: 100,
     backgroundColor: "mediumvioletred",
-    flexGrow: 1, //same as flex: 1,
   },
   darkturquoise: {
     width: 100,
@@ -47,8 +45,9 @@ const styles = StyleSheet.create({
     backgroundColor: "darkturquoise",
   },
   black: {
-    width: 100,
+    width: 900,
     height: 100,
     backgroundColor: "black",
+    flexShrink: 1, //Same as flex: 1-. if this items overflowing affects others, it get's shrunken so other items can fit on the screen
   },
 });
