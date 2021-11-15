@@ -19,8 +19,6 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.greenyellow} />
-      <View style={styles.gray} />
       <View style={styles.mediumvioletred} />
       <View style={styles.darkturquoise} />
       <View style={styles.black} />
@@ -35,23 +33,13 @@ const styles = StyleSheet.create({
     flexDirection: "row-reverse",
     justifyContent: "space-between",
     alignItems: "center",
-    alignContent: "center", //Only works when there is wrapping
-    flexWrap: "wrap",
-  },
-  greenyellow: {
-    width: 100,
-    height: 100,
-    backgroundColor: "greenyellow",
-  },
-  gray: {
-    width: 100,
-    height: 100,
-    backgroundColor: "gray",
   },
   mediumvioletred: {
-    width: 100,
+    // width: 100,
+    flexBasis: 100, // width or height
     height: 100,
     backgroundColor: "mediumvioletred",
+    flexGrow: 1, //same as flex: 1,
   },
   darkturquoise: {
     width: 100,
