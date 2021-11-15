@@ -15,15 +15,14 @@ import {
 } from "react-native";
 
 export default function App() {
-  const {landscape} = useDeviceOrientation();
+  const { landscape } = useDeviceOrientation();
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View
-        style={{ backgroundColor: "tomato", width: "100%",
-        height: landscape ? "100%" : "30%" }}
-      ></View>
-    </SafeAreaView>
+    <View style={{ backgroundColor: "black", flex: 1 }}>
+      <View style={{ backgroundColor: "mediumvioletred", flex: 1 }} />
+      <View style={{ backgroundColor: "black", flex: 2 }} />
+      <View style={{ backgroundColor: "darkturquoise", flex: 1 }} />
+    </View>
   );
 }
 
