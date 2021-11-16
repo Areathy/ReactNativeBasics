@@ -2,11 +2,14 @@ import React from "react";
 import { Text } from "react-native";
 import { ImageBackground, StyleSheet, View, Image } from "react-native";
 
+import colors from "../config/colors";
+
 function WelcomeScreen(props) {
   return (
     <ImageBackground
       style={styles.background}
       source={require("../assets/profile.jpeg")}
+      resizeMode="contain"
     >
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/favicon.png")} />
@@ -28,7 +31,7 @@ const styles = StyleSheet.create({
   loginButton: {
     width: "100%",
     height: 70,
-    backgroundColor: "darkturquoise",
+    backgroundColor: colors.sec,
   },
 
   logo: {
@@ -49,7 +52,7 @@ const styles = StyleSheet.create({
   registerButton: {
     width: "100%",
     height: 70,
-    backgroundColor: "mediumvioletred",
+    backgroundColor: colors.pri,
   },
 });
 
